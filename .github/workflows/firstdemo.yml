@@ -1,0 +1,23 @@
+name : my first github actions
+
+on:
+  push:
+    branches:
+      -main
+
+ jobs:
+  first-jobs
+    runs-on:ubuntu-latest
+
+    steps:
+      - name : print first messgae
+        run : echo "my first message"
+
+      - name: Print second message
+        run: echo "My first CI/CD pipeline"
+
+      - name: Check current directory
+        run: pwd
+
+      - name: List files
+        run: ls -la        
